@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Política de privacidade · Sistema de Ponto</title>
+    <style>
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto;
+               padding: 32px 16px; line-height: 1.6; color: #1d2433; background: #ffffff; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 20px; margin-top: 32px; }
+        .suave { color: #5b6475; }
+        a { color: #1a56db; }
+    </style>
+</head>
+<body>
+<p><a href="index.html">← Sistema de Ponto</a></p>
+<h1>Política de privacidade do Sistema de Ponto</h1>
+<p class="suave">Última atualização: 16 de novembro de 2026</p>
+
+<p>O Sistema de Ponto é um software de uso interno da WM Service, instalado num computador da própria empresa,
+    para o controle de jornada dos seus funcionários. Esta política explica como o sistema trata os dados, em
+    especial os dados de contas Google.</p>
+
+<h2>1. Dados do Google que o sistema acessa</h2>
+<p>O sistema usa uma única permissão do Google: <strong>acesso aos arquivos do Google Drive criados pelo próprio
+    sistema</strong> (escopo <code>drive.file</code>). Com ela, o sistema cria a pasta "Backups do Sistema de Ponto"
+    no Google Drive da conta da empresa que autorizou o acesso, envia para lá os arquivos de backup e apaga os
+    backups antigos que ele mesmo criou. O sistema <strong>não lê, não lista e não altera</strong> nenhum outro
+    arquivo do Google Drive, e não acessa e-mails, contatos, agenda nem outros dados da conta Google.</p>
+
+<h2>2. Como esses dados são usados</h2>
+<p>O acesso ao Google Drive serve exclusivamente para guardar cópias de segurança do próprio Sistema de Ponto.
+    Os arquivos de backup são criptografados (AES-256) no computador da empresa antes do envio, com uma senha que
+    só a empresa conhece; o Google armazena os arquivos, mas não consegue ler o seu conteúdo.</p>
+
+<h2>3. Armazenamento e compartilhamento</h2>
+<p>A autorização do Google fica guardada apenas no computador da empresa onde o sistema está instalado. Nenhum
+    dado obtido das APIs do Google é vendido, compartilhado com terceiros, usado para publicidade ou transferido
+    para qualquer outro lugar além do próprio Google Drive da empresa.</p>
+<p>O uso e a transferência de informações recebidas das APIs do Google seguem a
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos
+    Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.
+    <span class="suave">(The use and transfer of information received from Google APIs will adhere to the Google API
+    Services User Data Policy, including the Limited Use requirements.)</span></p>
+
+<h2>4. Dados dos funcionários</h2>
+<p>Os dados do controle de ponto (cadastro, marcações e dados biométricos, quando autorizados pelo funcionário)
+    ficam no computador da empresa e nos seus backups criptografados, tratados conforme a Lei Geral de Proteção de
+    Dados (LGPD) e as regras internas da WM Service.</p>
+
+<h2>5. Como revogar o acesso</h2>
+<p>O acesso ao Google Drive pode ser removido a qualquer momento pelo painel do sistema (Configurações → Backup →
+    Desconectar) ou pela própria conta Google, em
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Os arquivos já
+    enviados continuam no Google Drive da empresa até serem apagados.</p>
+
+<h2>6. Contato</h2>
+<p>Dúvidas sobre esta política: <a href="mailto:wmservicetecnologia@gmail.com">wmservicetecnologia@gmail.com</a>.</p>
+</body>
+</html>
